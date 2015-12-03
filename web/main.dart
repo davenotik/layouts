@@ -12,7 +12,7 @@ void main() {
 
   document.onScroll.listen((_) {
     var newY = document.body.scrollTop;
-    if ((oldY - newY).abs() > 10) {
+    if ((oldY - newY).abs() > 30) {
       if (oldY < newY) {
         hide();
       } else {
