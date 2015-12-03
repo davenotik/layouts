@@ -25,6 +25,7 @@ void main() {
     oldY = newY;
   });
 
+  // TODO: Is adding class on every listen slow? Maybe hold a local var?
   closeSidePanel.onClick.listen((e) {
     sidePanel.classes.add('hide');
   });

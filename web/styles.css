@@ -50,10 +50,19 @@ html, body {
   transform: translate3d(-250px,0,0);
 }
 
+.chat-box {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+}
+
 .main {
   display: block;
   position: relative;
   height: 2000px;
   margin-top: 75px;
+  margin-bottom: 75px;
   text-align: center;
 }
