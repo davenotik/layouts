@@ -3,7 +3,10 @@
 
 import 'dart:html';
 
-final header = querySelector('.header');
+Element header = querySelector('.header');
+Element sidePanel = querySelector('.side-panel');
+Element closeSidePanel = querySelector('.side-panel .close');
+Element toggle = querySelector('.header .toggle');
 
 void main() {
   querySelector('.main').text = 'Your Dart app is running.';
@@ -21,10 +24,20 @@ void main() {
     }
     oldY = newY;
   });
+
+  closeSidePanel.onClick.listen((e) {
+    sidePanel.classes.add('hide');
+  });
+
+  toggle.onClick.listen((e) {
+    sidePanel.classes.remove('hide');
+  });
 }
 
 hide() {
-  header.classes.add('hide');
+  if (sidePanel.classes.contains('hide')) {
+    header.classes.add('hide');
+  }
 }
 
 show() {

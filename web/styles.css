@@ -9,6 +9,7 @@ html, body {
 }
 
 .header {
+  z-index: 23;
   position: fixed;
   top: 0;
   display: block;
@@ -28,13 +29,25 @@ html, body {
   transform: translate3d(0,-131px,0);
 }
 
-.side-panel {
+.header .toggle {
   position: fixed;
-  top: 0;
+  left: 10px;
+  top: 10px;
+}
+
+.side-panel {
+  z-index: 22;
+  position: fixed;
+  top: 50px;
   display: block;
   width: 250px;
   background-color: rgba(65, 65, 68, 0.7);
   height: 100%;
+}
+
+.side-panel.hide {
+  -webkit-transform: translate3d(-250px,0,0);
+  transform: translate3d(-250px,0,0);
 }
 
 .main {
