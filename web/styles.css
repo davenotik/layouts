@@ -11,9 +11,12 @@ html, body {
 .header {
   position: fixed;
   display: block;
-  height: 150px;
+  height: 130px;
   background-color: yellow;
   width: 100%;
+
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .header.hide {
@@ -30,7 +33,7 @@ html, body {
 }
 
 .main {
-  margin-top: 150px;
   display: block;
   position: relative;
+  height: 2000px;
 }
