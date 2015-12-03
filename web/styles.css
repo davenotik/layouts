@@ -36,9 +36,9 @@ html, body {
 }
 
 .side-panel {
-  z-index: 22;
+  z-index: 26;
   position: fixed;
-  top: 50px;
+  top: 0px;
   display: block;
   width: 250px;
   background-color: rgba(65, 65, 68, 0.7);
