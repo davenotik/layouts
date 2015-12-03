@@ -3,10 +3,10 @@
 
 import 'dart:html';
 
-Element header = querySelector('.header');
-Element sidePanel = querySelector('.side-panel');
-Element closeSidePanel = querySelector('.side-panel .close');
-Element toggle = querySelector('.header .toggle');
+final Element header = querySelector('.header');
+final Element sidePanel = querySelector('.side-panel');
+final Element closeSidePanel = querySelector('.side-panel .close');
+final Element toggle = querySelector('.header .toggle');
 
 void main() {
   querySelector('.main').text = 'Your Dart app is running.';
