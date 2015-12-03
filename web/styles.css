@@ -10,10 +10,12 @@ html, body {
 
 .header {
   position: fixed;
+  top: 0;
   display: block;
   height: 50px;
   background-color: #00A114;
   width: 100%;
+  text-align: center;
 
   -webkit-transition: -webkit-transform .2s cubic-bezier(.4,0,.2,1),opacity .2s cubic-bezier(.4,0,.2,1);
   transition: transform .2s cubic-bezier(.4,0,.2,1),opacity .2s cubic-bezier(.4,0,.2,1);
@@ -28,6 +30,7 @@ html, body {
 
 .side-panel {
   position: fixed;
+  top: 0;
   display: block;
   width: 250px;
   background-color: rgba(65, 65, 68, 0.7);
@@ -38,4 +41,6 @@ html, body {
   display: block;
   position: relative;
   height: 2000px;
+  margin-top: 75px;
+  text-align: center;
 }
