@@ -11,8 +11,8 @@ html, body {
 .header {
   position: fixed;
   display: block;
-  height: 130px;
-  background-color: yellow;
+  height: 50px;
+  background-color: #00A114;
   width: 100%;
 
   -webkit-transition: -webkit-transform .2s cubic-bezier(.4,0,.2,1),opacity .2s cubic-bezier(.4,0,.2,1);
@@ -30,7 +30,7 @@ html, body {
   position: fixed;
   display: block;
   width: 250px;
-  background-color: blue;
+  background-color: rgba(65, 65, 68, 0.7);
   height: 100%;
 }
 
