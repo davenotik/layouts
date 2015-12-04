@@ -7,6 +7,8 @@ final Element header = querySelector('.header');
 final Element sidePanel = querySelector('.side-panel');
 final Element closeSidePanel = querySelector('.side-panel .close');
 final Element toggle = querySelector('.header .toggle');
+final Element scrim = querySelector('.scrim');
+final Element mainDiv = querySelector('.main');
 
 void main() {
   querySelector('.main').text = 'Your Dart app is running.';
@@ -28,10 +30,14 @@ void main() {
   // TODO: Is adding class on every listen slow? Maybe hold a local var?
   closeSidePanel.onClick.listen((e) {
     sidePanel.classes.add('hide');
+    scrim.classes.removeAll(['show']);
+    mainDiv.classes.remove('noscroll');
   });
 
   toggle.onClick.listen((e) {
     sidePanel.classes.remove('hide');
+//    scrim.classes.addAll(['show']);
+    mainDiv.classes.add('noscroll');
   });
 }
 
